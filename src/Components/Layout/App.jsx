@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+import Body from '../Body/Body';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import "./App.css";
+import Layout from './Layout';
 
 export class App extends Component {
     render() {
         return (
-            <div>
-                <Header/>
-            </div>
+            <Layout>
+                <Header />
+                <Body />
+                <Footer />
+            </Layout>
         );
     }
 }
